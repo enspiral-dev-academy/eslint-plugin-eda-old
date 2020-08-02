@@ -1,0 +1,2 @@
+cd node_modules/eslint-plugin-eda
+npm run lint:backend

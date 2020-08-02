@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-eda",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ESLint config for EDA projects",
   "keywords": [
     "eslint",
@@ -10,9 +10,16 @@
   "author": "Don Smith",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "lint:frontend": "eslint -c ./.eslintrc.json ../../client",
+    "lint:backend": "eslint -c ./.eslintrc.json ../../server"
+  },
+  "bin": {
+    "lint-backend": "./lint-backend",
+    "lint-frontend": "./lint-frontent"
   },
   "dependencies": {
+    "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
@@ -24,7 +31,6 @@
     "prettier": "2.0.5"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
     "mocha": "^7.2.0"
   },
   "engines": {
