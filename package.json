@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-eda",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ESLint config for EDA projects",
   "keywords": [
     "eslint",
@@ -16,7 +16,7 @@
   },
   "bin": {
     "lint-backend": "./lint-backend",
-    "lint-frontend": "./lint-frontent"
+    "lint-frontend": "./lint-frontend"
   },
   "dependencies": {
     "eslint": "^7.4.0",
